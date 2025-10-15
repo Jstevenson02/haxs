@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import MemberCarousel from "./components/MemberCarousel";
 
 export default function Home() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -58,6 +59,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* User Carousel */}
+      <MemberCarousel />
 
       {/* Pricing Cards */}
       <section className='py-16 bg-gray-900'>
