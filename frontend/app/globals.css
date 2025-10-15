@@ -52,6 +52,25 @@ body {
     transform: scale(1.05);
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll linear infinite;
+  animation-play-state: running;
+}
+
+.scroller:hover .animate-scroll {
+  animation-play-state: paused;
+}
 .animate-fade-in {
   animation: fadeIn 1s ease-in;
 }
@@ -60,15 +79,6 @@ body {
 }
 .animate-pulse-slow {
   animation: pulseSlow 2s infinite;
-}
-
-.animate-scroll {
-  animation: scroll linear infinite;
-  animation-play-state: var(--is-hovered, running);
-}
-
-.scroller:hover .animate-scroll {
-  animation-play-state: paused;
 }
 
 .bg-gray-900 {

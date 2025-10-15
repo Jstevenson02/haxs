@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // haxs/frontend/components/MemberCarousel.js
 
 const MemberCarousel = () => {
@@ -90,11 +91,7 @@ const MemberCarousel = () => {
           className='scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]'
           style={{ "--animation-duration": "80s" }}
         >
-          <ul
-            className='flex w-max min-w-full shrink-0 flex-nowrap py-4 animate-scroll gap-12'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <ul className='flex w-max min-w-full shrink-0 flex-nowrap py-4 animate-scroll gap-12'>
             {[...members, ...members].map((member, index) => (
               <li key={index}>
                 <a
