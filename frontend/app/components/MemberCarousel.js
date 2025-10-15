@@ -137,14 +137,6 @@ const MemberCarousel = () => {
             ))}
           </ul>
         </div>
-        <img
-          alt='Background'
-          loading='lazy'
-          width='250'
-          height='250'
-          className='absolute top-1/2 left-1/2 -z-10 w-full max-w-xl -translate-x-1/2 -translate-y-1/2 object-cover opacity-75'
-          src='/assets/bg-blur-1.webp'
-        />
       </div>
     </div>
   );
